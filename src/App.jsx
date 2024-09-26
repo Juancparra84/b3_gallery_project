@@ -8,13 +8,18 @@ import { Food1 } from './components/Food1';
 import { Food2 } from './components/Food2';
 import { Food3 } from './components/Food3';
 import { Landscape } from './components/Landscape';
+import { Navigation } from './components/Navigation';
 
 function App() {
 
   return (
     <>
       <BrowserRouter>
-        <Routes>
+      <div>
+        <h1 className='text-center my-3'>Gallery Project</h1>
+      </div>
+      <div className='container d-flex justifiy-content-center'>
+      <Routes>
           <Route path='/animal1' element = {<Animal1 className = 'main-img-container' />} />
           <Route path='/animal2' element = {<Animal2 className = 'main-img-container' />} />
           <Route path='/animal3' element = {<Animal3 className = 'main-img-container' />} />
@@ -23,6 +28,10 @@ function App() {
           <Route path='/food3' element = {<Food3 className = 'main-img-container' />} />
           <Route path='/landscape' element = {<Landscape className = 'main-img-container' />} />
         </Routes>
+      </div>
+      <div className='container'>
+        <Navigation />
+      </div>
       </BrowserRouter>
 
 

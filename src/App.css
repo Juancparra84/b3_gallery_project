@@ -2,6 +2,7 @@
     Estilos para el contenedor principal de la imagen destacada
    =================================== */
    .main-img-container {
+    margin: auto;
     display: flex; /* Flexbox para alinear contenido */
     justify-content: center; /* Centrar horizontalmente la imagen */
     align-items: center; /* Centrar verticalmente la imagen */
